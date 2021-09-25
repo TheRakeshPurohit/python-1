@@ -1,11 +1,12 @@
 import unittest
 import pytest
 from lasagna import (
-    EXPECTED_BAKE_TIME,
-    bake_time_remaining,
-    preparation_time_in_minutes,
-    elapsed_time_in_minutes
-    )
+                    EXPECTED_BAKE_TIME,
+                    bake_time_remaining,
+                    preparation_time_in_minutes,
+                    elapsed_time_in_minutes
+                    )
+
 
 class LasagnaTest(unittest.TestCase):
 
@@ -46,18 +47,18 @@ class LasagnaTest(unittest.TestCase):
 
         for variant, layers, time, total_time in zip(number_of_variants, layer_data, time_data, result_data):
             with self.subTest(f"variation #{variant}", layers=layers, time=time, total_time=total_time):
-
                 failure_msg = f'Expected {time} minutes elapsed, but the timing was calculated incorrectly.'
-                self.assertEqual(elapsed_time_in_minutes(layers, time), total_time,msg=failure_msg)
+                self.assertEqual(elapsed_time_in_minutes(layers, time), total_time, msg=failure_msg)
 
     @pytest.mark.task(taskno=5)
     def test_docstrings_were_written(self):
-        self.assertIsNotNone(elapsed_time_in_minutes.__doc__,
-                             msg="Expected a docstring for elapsed_time_in_minutes, but recieved None instead.")
-        self.assertIsNotNone(preparation_time_in_minutes.__doc__,
-                             msg="Expected a docstring for preparation_time_in_minutes, but recieved None instead.")
-        self.assertIsNotNone(bake_time_remaining.__doc__,
-                             msg="Expected a docstring for bake_time_remaining, but no docstring was found.")
+        functions = [bake_time_remaining, preparation_time_in_minutes, elapsed_time_in_minutes]
+        number_of_variants = range(1, len(functions) + 1)
+
+        for variant, function in zip(number_of_variants, functions):
+            with self.subTest(f"variation #{variant}", function=function):
+                failure_msg = msg = f'Expected a docstring for `{function.__name__}`, but received `None` instead.'
+                self.assertIsNotNone(function.__doc__, msg=failure_msg)
 
 
 if __name__ == "__main__":

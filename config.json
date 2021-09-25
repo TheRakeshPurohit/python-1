@@ -32,15 +32,15 @@
         "uuid": "5a9b42fb-ddf4-424b-995d-f9952ea63c37",
         "concepts": ["strings"],
         "prerequisites": ["basics"],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "meltdown-mitigation",
         "name": "Meltdown Mitigation",
         "uuid": "50c88b36-e2e2-46e5-b6c4-bb7e714c375a",
         "concepts": ["conditionals"],
-        "prerequisites": ["basics", "booleans", "comparisons"],
-        "status": "wip"
+        "prerequisites": ["basics", "bools"],
+        "status": "beta"
       },
       {
         "slug": "tisbury-treasure-hunt",
@@ -48,7 +48,7 @@
         "uuid": "7ecd42c1-2ed5-487a-bc89-71c9cbad9b05",
         "concepts": ["tuples"],
         "prerequisites": ["bools", "loops", "conditionals", "numbers"],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "guidos-gorgeous-lasagna",
@@ -56,7 +56,7 @@
         "uuid": "dfd7dc01-3544-4f61-a063-af8530d6e601",
         "concepts": ["basics"],
         "prerequisites": [],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "ghost-gobble-arcade-game",
@@ -64,7 +64,7 @@
         "uuid": "c050470d-ef22-4187-aaac-239e07955a4d",
         "concepts": ["bools"],
         "prerequisites": ["basics"],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "black-jack",
@@ -79,7 +79,7 @@
         "name": "Pretty Leaflet",
         "uuid": "5b813a3a-1983-470b-91a1-9f2c0b327ab7",
         "concepts": ["string-formatting"],
-        "prerequisites": ["strings", "classes", "loops", "lists"],
+        "prerequisites": ["strings", "loops", "lists"],
         "status": "wip"
       },
       {
@@ -88,7 +88,7 @@
         "uuid": "0558b66c-f2c8-4ff3-846a-4ac87a8660d9",
         "concepts": ["dicts"],
         "prerequisites": ["loops", "lists", "tuples"],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "log-levels",
@@ -113,7 +113,7 @@
         "uuid": "d76958ce-3a5b-4e4c-9388-b109f67cf23a",
         "concepts": ["lists"],
         "prerequisites": ["conditionals", "strings"],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "chaitanas-colossal-coaster",
@@ -121,7 +121,7 @@
         "uuid": "f326f3f8-1ab0-4d3d-8f42-5130fe5af841",
         "concepts": ["list-methods"],
         "prerequisites": ["lists"],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "restaurant-rozalynn",
@@ -145,13 +145,12 @@
         "concepts": ["loops"],
         "prerequisites": [
           "basics",
-          "comparisons",
           "conditionals",
           "lists",
           "list-methods",
           "strings"
         ],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "little-sisters-essay",
@@ -159,7 +158,7 @@
         "uuid": "09c322bc-5c04-480b-8441-fd9ef5c7a3b4",
         "concepts": ["string-methods"],
         "prerequisites": ["basics", "strings"],
-        "status": "wip"
+        "status": "beta"
       },
       {
         "slug": "currency-exchange",
@@ -167,7 +166,15 @@
         "uuid": "1335ca33-3af0-4720-bcf2-bfa68ffc6862",
         "concepts": ["numbers"],
         "prerequisites": ["basics"],
-        "status": "wip"
+        "status": "beta"
+      },
+      {
+        "slug": "cater-waiter",
+        "name": "Cater Waiter",
+        "uuid": "922f8d2d-87ec-4681-9654-4e0a36a558d4",
+        "concepts": ["sets"],
+        "prerequisites": ["basics", "dicts", "lists", "loops", "tuples"],
+        "status": "beta"
       }
     ],
     "practice": [
@@ -184,7 +191,7 @@
         "name": "Two Fer",
         "uuid": "4177de10-f767-4306-b45d-5e9c08ef4753",
         "practices": ["string-formatting", "function-arguments"],
-        "prerequisites": ["basics", "string-formatting", "function-arguments"],
+        "prerequisites": ["basics"],
         "difficulty": 1
       },
       {
@@ -210,7 +217,7 @@
         "name": "High Scores",
         "uuid": "574d6323-5ff5-4019-9ebe-0067daafba13",
         "practices": ["lists"],
-        "prerequisites": ["basics", "lists", "list-methods", "sequences"],
+        "prerequisites": ["basics", "lists", "list-methods"],
         "difficulty": 1
       },
       {
@@ -225,16 +232,12 @@
         ],
         "prerequisites": [
           "basics",
-          "classes",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-methods-splitting"
+          "string-methods"
         ],
         "difficulty": 2
       },
@@ -251,15 +254,8 @@
           "basics",
           "loops",
           "lists",
-          "list-comprehensions",
-          "generator-expressions",
           "conditionals",
-          "comparisons",
-          "numbers",
-          "raising-and-handling-errors",
-          "sequences",
-          "iteration",
-          "itertools"
+          "numbers"
         ],
         "difficulty": 2
       },
@@ -279,14 +275,11 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
           "loops",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 5
       },
@@ -305,8 +298,6 @@
           "loops",
           "strings",
           "string-methods",
-          "regular-expressions",
-          "itertools",
           "dicts"
         ],
         "difficulty": 3
@@ -319,10 +310,8 @@
         "prerequisites": [
           "basics",
           "lists",
-          "list-comprehensions",
           "loops",
           "dicts",
-          "dict-methods",
           "strings",
           "string-methods"
         ],
@@ -339,15 +328,7 @@
           "strings",
           "string-methods-splitting"
         ],
-        "prerequisites": [
-          "basics",
-          "list-comprehensions",
-          "loops",
-          "regular-expressions",
-          "strings",
-          "string-methods",
-          "string-methods-splitting"
-        ],
+        "prerequisites": ["basics", "loops", "strings", "string-methods"],
         "difficulty": 3
       },
       {
@@ -362,20 +343,10 @@
         ],
         "prerequisites": [
           "basics",
-          "classes",
-          "class-customization",
           "dicts",
-          "functions",
-          "function-arguments",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
-          "iteration",
-          "itertools",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-methods-splitting"
+          "string-methods"
         ],
         "difficulty": 3
       },
@@ -384,17 +355,7 @@
         "name": "Grade School",
         "uuid": "aadde1a8-ed7a-4242-bfc0-6dddfd382cf3",
         "practices": ["collections", "dict-methods"],
-        "prerequisites": [
-          "basics",
-          "classes",
-          "dicts",
-          "dict-methods",
-          "collections",
-          "lists",
-          "list-methods",
-          "list-comprehensions",
-          "sequences"
-        ],
+        "prerequisites": ["basics", "dicts", "lists", "list-methods"],
         "difficulty": 3
       },
       {
@@ -405,15 +366,10 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
           "conditionals",
-          "comparisons",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "strings",
           "string-methods",
           "string-formatting",
@@ -432,11 +388,7 @@
         ],
         "prerequisites": [
           "basics",
-          "classes",
-          "class-composition",
-          "class-customization",
           "comparisons",
-          "rich-comparisons",
           "numbers",
           "strings",
           "string-formatting"
@@ -448,7 +400,7 @@
         "name": "Markdown",
         "uuid": "88610b9a-6d3e-4924-a092-6d2f907ed4e2",
         "practices": ["regular-expressions", "functions"],
-        "prerequisites": ["functions", "regular-expressions"],
+        "prerequisites": [],
         "difficulty": 4
       },
       {
@@ -469,25 +421,12 @@
         ],
         "prerequisites": [
           "basics",
-          "functions",
-          "collections",
-          "higher-order-functions",
-          "anonymous-functions",
           "strings",
-          "string-formatting",
           "string-methods",
-          "string-methods-splitting",
           "dicts",
-          "dict-methods",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "other-comprehensions",
-          "generators",
-          "generator-expressions",
-          "raising-and-handling-errors",
-          "sequences",
           "tuples"
         ],
         "difficulty": 5
@@ -506,21 +445,11 @@
         ],
         "prerequisites": [
           "basics",
-          "functions",
-          "functools",
-          "collections",
           "conditionals",
-          "comparisons",
           "dicts",
-          "dict-methods",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "other-comprehensions",
-          "generators",
-          "generator-expressions",
-          "sequences",
           "tuples",
           "sets",
           "numbers"
@@ -551,12 +480,8 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "lists",
-          "list-comprehensions",
           "loops",
           "sets",
           "strings",
@@ -573,12 +498,8 @@
           "basics",
           "conditionals",
           "dicts",
-          "dict-methods",
           "lists",
-          "list-comprehensions",
           "loops",
-          "none",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -591,11 +512,8 @@
         "practices": ["generator-expressions"],
         "prerequisites": [
           "basics",
-          "comparisons",
           "lists",
           "loops",
-          "list-comprehensions",
-          "generator-expressions",
           "numbers",
           "strings",
           "string-methods"
@@ -610,13 +528,10 @@
         "prerequisites": [
           "basics",
           "bools",
-          "comparisons",
           "conditionals",
           "lists",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
           "strings"
         ],
         "difficulty": 1
@@ -632,18 +547,12 @@
         ],
         "prerequisites": [
           "basics",
-          "classes",
-          "conditionals",
           "comparisons",
           "lists",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -655,13 +564,9 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
           "lists",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "numbers",
-          "raising-and-handling-errors",
           "strings"
         ],
         "difficulty": 1
@@ -675,9 +580,7 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
-          "list-comprehensions",
           "loops",
           "strings",
           "string-methods"
@@ -689,14 +592,7 @@
         "name": "Collatz Conjecture",
         "uuid": "33f689ee-1d9c-4908-a71c-f84bff3510df",
         "practices": ["numbers"],
-        "prerequisites": [
-          "basics",
-          "conditionals",
-          "comparisons",
-          "loops",
-          "numbers",
-          "raising-and-handling-errors"
-        ],
+        "prerequisites": ["basics", "conditionals", "loops", "numbers"],
         "difficulty": 1
       },
       {
@@ -704,13 +600,7 @@
         "name": "Difference Of Squares",
         "uuid": "913b6099-d75a-4c27-8243-476081752c31",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "conditionals",
-          "comparisons",
-          "loops",
-          "numbers"
-        ],
+        "prerequisites": ["basics", "conditionals", "loops", "numbers"],
         "difficulty": 1
       },
       {
@@ -722,12 +612,9 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -742,16 +629,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "functions",
-          "function-arguments",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -770,16 +651,9 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
-          "iteration",
-          "itertools",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
-          "raising-and-handling-errors",
-          "sequences",
           "sets"
         ],
         "difficulty": 3
@@ -793,7 +667,6 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "loops",
           "numbers"
         ],
@@ -815,7 +688,6 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
           "loops",
@@ -830,12 +702,8 @@
         "practices": ["class-customization", "dict-methods"],
         "prerequisites": [
           "basics",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "dicts",
-          "dict-methods",
           "loops",
           "numbers"
         ],
@@ -849,7 +717,6 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
           "strings",
           "string-methods"
         ],
@@ -864,7 +731,6 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
           "loops",
@@ -882,14 +748,9 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "iteration",
-          "itertools",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "numbers"
         ],
         "difficulty": 1
@@ -901,14 +762,10 @@
         "practices": [],
         "prerequisites": [
           "basics",
-          "classes",
           "conditionals",
-          "comparisons",
           "list",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "none",
           "numbers",
           "strings",
           "string-methods"
@@ -923,10 +780,7 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
           "lists",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
           "numbers",
           "sets"
@@ -948,14 +802,8 @@
           "basics",
           "bools",
           "conditionals",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "comparisons",
-          "rich-comparisons",
           "numbers",
-          "strings",
-          "string-formatting"
+          "strings"
         ],
         "difficulty": 4
       },
@@ -972,23 +820,13 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-composition",
-          "class-inheritance",
           "conditionals",
-          "comparisons",
           "dicts",
-          "dict-methods",
           "lists",
           "list-methods",
           "loops",
-          "raising-and-handling-errors",
-          "user-defined-errors",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 4
       },
@@ -1017,17 +855,11 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "none",
-          "numbers",
-          "raising-and-handling-errors",
-          "sequences"
+          "numbers"
         ],
         "difficulty": 3
       },
@@ -1039,21 +871,12 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
           "conditionals",
-          "comparisons",
-          "functions",
-          "function-arguments",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "other-comprehensions",
-          "raising-and-handling-errors",
-          "sequences",
           "sets",
-          "tuples",
-          "unpacking-and-multiple-assignment"
+          "tuples"
         ],
         "difficulty": 4
       },
@@ -1070,18 +893,9 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "descriptors",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "raising-and-handling-errors",
-          "sequences",
           "sets"
         ],
         "difficulty": 6
@@ -1094,17 +908,13 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
           "dicts",
-          "dict-methods",
           "lists",
           "list-methods",
           "loops",
           "numbers",
-          "sequences",
           "strings",
           "string-methods",
-          "string-formatting",
           "tuples"
         ],
         "difficulty": 1
@@ -1116,16 +926,11 @@
         "practices": ["bitflags", "bitwise-operators"],
         "prerequisites": [
           "basics",
-          "bitflags",
-          "bitwise-operators",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "number-variations",
           "strings"
         ],
         "difficulty": 2
@@ -1141,23 +946,12 @@
           "anonymous-functions"
         ],
         "prerequisites": [
-          "anonymous-functions",
           "basics",
           "conditionals",
-          "comparisons",
-          "functions",
-          "functional-tools",
-          "higher-order-functions",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
-          "generator-expressions",
           "loops",
-          "numbers",
-          "raising-and-handling-errors",
-          "sequences"
+          "numbers"
         ],
         "difficulty": 4
       },
@@ -1169,17 +963,12 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
           "conditionals",
-          "comparisons",
           "dicts",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "sets",
           "strings",
           "string-methods",
@@ -1196,13 +985,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "numbers",
-          "sequences"
+          "numbers"
         ],
         "difficulty": 2
       },
@@ -1215,15 +1001,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
           "string-methods",
           "tuples"
@@ -1239,16 +1020,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "functions",
-          "higher-order-functions",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "numbers",
-          "sequences"
+          "numbers"
         ],
         "difficulty": 3
       },
@@ -1261,15 +1036,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "iteration",
-          "itertools",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "strings",
           "string-methods",
           "sets",
@@ -1288,12 +1058,9 @@
           "loops",
           "dicts",
           "lists",
-          "sequences",
           "numbers",
           "strings",
-          "string-methods",
-          "string-methods-splitting",
-          "raising-and-handling-errors"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -1309,7 +1076,6 @@
           "strings",
           "string-methods",
           "string-methods-splitting",
-          "raising-and-handling-errors",
           "numbers"
         ],
         "difficulty": 1
@@ -1322,19 +1088,13 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
           "conditionals",
-          "comparisons",
           "dicts",
-          "dict-methods",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 4
       },
@@ -1349,11 +1109,8 @@
           "loops",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "strings",
-          "string-methods",
-          "string-formatting",
-          "sequences"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -1362,7 +1119,7 @@
         "name": "Etl",
         "uuid": "a3b24ef2-303a-494e-8804-e52a67ef406b",
         "practices": ["dicts", "dict-methods", "other-comprehensions"],
-        "prerequisites": ["other-comprehensions", "dicts", "dict-methods"],
+        "prerequisites": ["dicts"],
         "difficulty": 1
       },
       {
@@ -1376,9 +1133,7 @@
           "strings",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "loops",
-          "none"
+          "loops"
         ],
         "difficulty": 1
       },
@@ -1391,13 +1146,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "functions",
           "strings",
           "string-methods",
           "lists",
-          "loops",
-          "sequences"
+          "loops"
         ],
         "difficulty": 1
       },
@@ -1409,21 +1161,12 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "class-composition",
           "conditionals",
-          "comparisons",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 5
       },
@@ -1436,18 +1179,12 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 5
       },
@@ -1460,15 +1197,11 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
           "loops",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -1480,14 +1213,8 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
           "dicts",
-          "dict-methods",
-          "iteration",
-          "itertools",
           "lists",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
           "numbers",
           "strings",
@@ -1503,18 +1230,11 @@
         "prerequisites": [
           "basics",
           "bools",
-          "bytes",
-          "bitflags",
-          "bitwise-operators",
           "conditionals",
-          "comparisons",
-          "iteration",
           "lists",
           "list-methods",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -1529,19 +1249,13 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
-          "dict-methods",
-          "iteration",
           "lists",
           "list-methods",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 5
       },
@@ -1552,18 +1266,12 @@
         "practices": ["itertools"],
         "prerequisites": [
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "iteration",
-          "itertools",
           "numbers",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 2
       },
@@ -1576,12 +1284,9 @@
           "basics",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -1590,15 +1295,7 @@
         "name": "List Ops",
         "uuid": "818c6472-b734-4ff4-8016-ce540141faec",
         "practices": [],
-        "prerequisites": [
-          "conditionals",
-          "comparisons",
-          "lists",
-          "list-methods",
-          "list-comprehensions",
-          "loops",
-          "sequences"
-        ],
+        "prerequisites": ["conditionals", "lists", "list-methods", "loops"],
         "difficulty": 1
       },
       {
@@ -1608,14 +1305,10 @@
         "practices": [],
         "prerequisites": [
           "bools",
-          "classes",
           "conditionals",
-          "comparisons",
           "numbers",
-          "raising-and-handling-errors",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -1634,14 +1327,9 @@
         ],
         "prerequisites": [
           "basics",
-          "classes",
-          "class-customization",
-          "comparisons",
           "conditionals",
           "dicts",
           "dict-methods",
-          "functions",
-          "function-arguments",
           "lists",
           "loops",
           "numbers",
@@ -1661,7 +1349,6 @@
           "list-methods",
           "loops",
           "numbers",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -1675,15 +1362,9 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "loops",
           "numbers",
-          "operator-overloading",
-          "rich-comparisons",
-          "raising-and-handling-errors",
           "strings"
         ],
         "difficulty": 3
@@ -1703,19 +1384,10 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
-          "function-arguments",
-          "iteration",
-          "iterators",
           "lists",
           "loops",
-          "numbers",
-          "none",
-          "operator-overloading",
-          "rich-comparisons"
+          "numbers"
         ],
         "difficulty": 4
       },
@@ -1728,14 +1400,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -1750,14 +1418,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "numbers",
-          "raising-and-handling-errors",
-          "sequences"
+          "numbers"
         ],
         "difficulty": 4
       },
@@ -1775,22 +1439,12 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-composition",
-          "class-inheritance",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "operator-overloading",
-          "rich-comparisons",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -1805,15 +1459,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
-          "functions",
-          "itertools",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "strings"
         ],
         "difficulty": 5
@@ -1831,28 +1480,13 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-composition",
-          "class-inheritance",
           "conditionals",
-          "comparisons",
           "dicts",
-          "functions",
-          "function-arguments",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
           "numbers",
-          "operator-overloading",
-          "rich-comparisons",
-          "raising-and-handling-errors",
-          "sequences",
-          "strings",
-          "unpacking-and-multiple-assignment",
-          "user-defined-errors"
+          "strings"
         ],
         "difficulty": 3
       },
@@ -1865,15 +1499,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "regular-expressions",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -1888,13 +1517,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -1916,20 +1542,11 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
-          "functions",
-          "function-arguments",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
-          "sequences",
-          "strings",
-          "string-formatting",
-          "unpacking-and-multiple-assignment",
-          "with-statement"
+          "strings"
         ],
         "difficulty": 4
       },
@@ -1941,19 +1558,11 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "operator-overloading",
-          "rich-comparisons",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
           "tuples"
         ],
@@ -1967,23 +1576,14 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "operator-overloading",
-          "rich-comparisons",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
-          "tuples",
-          "user-defined-errors"
+          "tuples"
         ],
         "difficulty": 5
       },
@@ -1994,27 +1594,13 @@
         "practices": ["classes", "operator-overloading", "string-formatting"],
         "prerequisites": [
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "dicts",
-          "functions",
-          "function-arguments",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
-          "generators",
-          "iterators",
-          "itertools",
           "loops",
-          "operator-overloading",
-          "rich-comparisons",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 5
       },
@@ -2035,25 +1621,14 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
-          "dataclasses-and-namedtuples",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "iteration",
           "loops",
           "numbers",
-          "none",
-          "operator-overloading",
-          "rich-comparisons",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 6
       },
@@ -2072,17 +1647,11 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "recursion",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -2096,19 +1665,12 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "none",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings"
         ],
         "difficulty": 6
@@ -2121,28 +1683,14 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "class-composition",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
-          "none",
           "numbers",
-          "operator-overloading",
-          "raising-and-handling-errors",
-          "recursion",
-          "rich-comparisons",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 9
       },
@@ -2155,16 +1703,12 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -2176,19 +1720,13 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
-          "iteration",
-          "itertools",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 2
       },
@@ -2206,16 +1744,12 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "sequences",
           "strings",
           "string-methods",
-          "string-formatting",
           "tuples"
         ],
         "difficulty": 4
@@ -2240,24 +1774,14 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
-          "generators",
-          "generator-expressions",
-          "iteration",
-          "itertools",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
-          "none",
           "numbers",
-          "sequences",
           "sets",
           "strings",
           "string-methods",
-          "string-formatting",
           "tuples"
         ],
         "difficulty": 7
@@ -2277,25 +1801,14 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "class-composition",
           "conditionals",
-          "comparisons",
           "dicts",
-          "functools",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
-          "none",
           "numbers",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 8
       },
@@ -2308,17 +1821,12 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -2331,14 +1839,11 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
           "loops",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -2350,14 +1855,10 @@
         "prerequisites": [
           "basics",
           "conditionals",
-          "comparisons",
-          "iteration",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -2372,16 +1873,10 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "iteration",
-          "itertools",
-          "recursion",
-          "sequences",
           "strings",
           "string-methods"
         ],
@@ -2399,26 +1894,14 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "class-composition",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
           "numbers",
-          "operator-overloading",
-          "raising-and-handling-errors",
-          "rich-comparisons",
-          "sequences",
           "sets",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 5
       },
@@ -2440,28 +1923,13 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "class-composition",
           "conditionals",
-          "comparisons",
-          "context-manager-customization",
-          "decorators",
-          "descriptors",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
-          "operator-overloading",
-          "raising-and-handling-errors",
-          "rich-comparisons",
           "strings",
-          "string-methods",
-          "string-formatting",
-          "unpacking-and-multiple-assignment",
-          "with-statement"
+          "string-methods"
         ],
         "difficulty": 7
       },
@@ -2474,23 +1942,14 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
-          "functools",
-          "iteration",
-          "itertools",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
           "numbers",
-          "raising-and-handling-errors",
-          "sequences",
           "sets",
           "strings",
           "string-methods",
-          "string-formatting",
           "tuples"
         ],
         "difficulty": 6
@@ -2504,10 +1963,8 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "loops",
-          "numbers",
-          "sequences"
+          "numbers"
         ],
         "difficulty": 3
       },
@@ -2516,15 +1973,7 @@
         "name": "Accumulate",
         "uuid": "e7351e8e-d3ff-4621-b818-cd55cf05bffd",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "loops",
-          "numbers",
-          "bools",
-          "conditionals",
-          "comparisons",
-          "lists"
-        ],
+        "prerequisites": [],
         "difficulty": 2,
         "status": "deprecated"
       },
@@ -2533,17 +1982,7 @@
         "name": "Binary",
         "uuid": "49127efa-1124-4f27-bee4-99992e3433de",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "numbers",
-          "conditionals",
-          "loops",
-          "strings",
-          "string-methods",
-          "sequences",
-          "raising-and-handling-errors"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2552,22 +1991,7 @@
         "name": "Error Handling",
         "uuid": "0dac0feb-e1c8-497e-9a1b-e96e0523eea6",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
-          "conditionals",
-          "comparisons",
-          "lists",
-          "loops",
-          "numbers",
-          "raising-and-handling-errors",
-          "strings",
-          "string-methods",
-          "tuples"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2576,21 +2000,7 @@
         "name": "Hexadecimal",
         "uuid": "6b7f7b1f-c388-4f4c-b924-84535cc5e1a0",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "conditionals",
-          "comparisons",
-          "dicts",
-          "dict-methods",
-          "lists",
-          "list-methods",
-          "list-comprehensions",
-          "loops",
-          "numbers",
-          "strings",
-          "string-methods"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2599,21 +2009,7 @@
         "name": "Nucleotide Count",
         "uuid": "105f25ec-7ce2-4797-893e-05e3792ebd91",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "conditionals",
-          "comparisons",
-          "dicts",
-          "dict-methods",
-          "lists",
-          "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
-          "loops",
-          "strings",
-          "string-methods"
-        ],
+        "prerequisites": [],
         "difficulty": 2,
         "status": "deprecated"
       },
@@ -2622,21 +2018,7 @@
         "name": "Octal",
         "uuid": "4094d27f-4d03-4308-9fd7-9f3de312afec",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "conditionals",
-          "comparisons",
-          "dicts",
-          "dict-methods",
-          "lists",
-          "list-methods",
-          "list-comprehensions",
-          "loops",
-          "numbers",
-          "strings",
-          "string-methods"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2645,21 +2027,7 @@
         "name": "Parallel Letter Frequency",
         "uuid": "da03fca4-4606-48d8-9137-6e40396f7759",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "conditionals",
-          "comparisons",
-          "dicts",
-          "dict-methods",
-          "lists",
-          "list-methods",
-          "list-comprehensions",
-          "loops",
-          "numbers",
-          "strings",
-          "string-methods"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2668,21 +2036,7 @@
         "name": "Pascals Triangle",
         "uuid": "e1e1c7d7-c1d9-4027-b90d-fad573182419",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "conditionals",
-          "comparisons",
-          "dicts",
-          "dict-methods",
-          "lists",
-          "list-methods",
-          "list-comprehensions",
-          "loops",
-          "numbers",
-          "strings",
-          "string-methods"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2691,20 +2045,7 @@
         "name": "Point Mutations",
         "uuid": "d85ec4f2-c201-4eff-9f3a-831a0cc38e8d",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "loops",
-          "lists",
-          "list-comprehensions",
-          "generator-expressions",
-          "conditionals",
-          "comparisons",
-          "numbers",
-          "raising-and-handling-errors",
-          "sequences",
-          "iteration",
-          "itertools"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2713,23 +2054,7 @@
         "name": "Proverb",
         "uuid": "9fd94229-f974-45bb-97ea-8bfe484f6eb3",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "loops",
-          "lists",
-          "list-comprehensions",
-          "conditionals",
-          "comparisons",
-          "sequences",
-          "iteration",
-          "functions",
-          "none",
-          "function-arguments",
-          "strings",
-          "string-methods",
-          "string-formatting"
-        ],
+        "prerequisites": [],
         "difficulty": 2,
         "status": "deprecated"
       },
@@ -2738,22 +2063,7 @@
         "name": "Strain",
         "uuid": "b50b29a1-782d-4277-a4d4-23f635fbdaa6",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "loops",
-          "lists",
-          "list-comprehensions",
-          "conditionals",
-          "comparisons",
-          "sequences",
-          "iteration",
-          "functions",
-          "function-arguments",
-          "strings",
-          "string-methods",
-          "string-formatting"
-        ],
+        "prerequisites": [],
         "difficulty": 3,
         "status": "deprecated"
       },
@@ -2762,22 +2072,7 @@
         "name": "Trinary",
         "uuid": "061a6543-d51d-4619-891b-16f92c6435ca",
         "practices": [],
-        "prerequisites": [
-          "basics",
-          "bools",
-          "dicts",
-          "loops",
-          "lists",
-          "list-comprehensions",
-          "conditionals",
-          "comparisons",
-          "sequences",
-          "numbers",
-          "sets",
-          "strings",
-          "string-methods",
-          "string-formatting"
-        ],
+        "prerequisites": [],
         "difficulty": 4,
         "status": "deprecated"
       },
@@ -2789,14 +2084,10 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers"
         ],
@@ -2834,7 +2125,6 @@
         "prerequisites": [
           "basics",
           "bools",
-          "comparisons",
           "lists",
           "list-methods",
           "numbers",
@@ -2851,11 +2141,9 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "lists",
           "list-methods",
           "loops",
-          "sequences",
           "strings"
         ],
         "difficulty": 1
@@ -2869,11 +2157,9 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "loops",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -2885,8 +2171,6 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
@@ -2904,17 +2188,13 @@
           "basics",
           "bools",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
           "loops",
           "numbers",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 1
       },
@@ -2923,7 +2203,7 @@
         "name": "Darts",
         "uuid": "cb581e2c-66ab-4221-9884-44bacb7c4ebe",
         "practices": ["numbers"],
-        "prerequisites": ["basics", "bools", "conditionals", "comparisons", "numbers"],
+        "prerequisites": ["basics", "bools", "conditionals", "numbers"],
         "difficulty": 2
       },
       {
@@ -2934,16 +2214,9 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
-          "enums",
           "loops",
-          "none",
-          "numbers",
-          "raising-and-handling-errors",
-          "with-statement"
+          "numbers"
         ],
         "difficulty": 8
       },
@@ -2955,23 +2228,14 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
           "numbers",
-          "operator-overloading",
-          "raising-and-handling-errors",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 5
       },
@@ -2983,22 +2247,11 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
           "conditionals",
-          "comparisons",
           "lists",
-          "list-methods",
-          "list-comprehensions",
           "loops",
-          "none",
           "numbers",
-          "operator-overloading",
-          "raising-and-handling-errors",
-          "rich-comparisons",
-          "strings",
-          "string-formatting"
+          "strings"
         ],
         "difficulty": 5
       },
@@ -3016,28 +2269,14 @@
         "prerequisites": [
           "basics",
           "bools",
-          "classes",
-          "class-customization",
-          "class-inheritance",
           "conditionals",
-          "comparisons",
           "dicts",
           "lists",
           "list-methods",
-          "list-comprehensions",
-          "other-comprehensions",
           "loops",
-          "none",
           "numbers",
-          "operator-overloading",
-          "raising-and-handling-errors",
-          "recursion",
-          "regular-expressions",
-          "rich-comparisons",
-          "sequences",
           "strings",
-          "string-methods",
-          "string-formatting"
+          "string-methods"
         ],
         "difficulty": 7
       }
@@ -3360,32 +2599,32 @@
     {
       "title": "Batteries Included",
       "content": "Epic & well-documented standard library. Need more? Use a PyPi package - there's one for everything.",
-      "icon": ""
+      "icon": "powerful"
     },
     {
       "title": "Easy",
       "content": "Human-friendly Syntax and a vibrant, supportive community. Quick to learn & intuitive to use.",
-      "icon": ""
+      "icon": "fun"
     },
     {
       "title": "Extensible",
       "content": "Need to call Fortran from a web API? Done. Need to process images using C? Python can do that.",
-      "icon": ""
+      "icon": "extensible"
     },
     {
       "title": "Flexible",
       "content": "Duck, dynamic, & strong typing. Easy to debug. Fun for experiments, robust for large applications.",
-      "icon": ""
+      "icon": "interop"
     },
     {
       "title": "Multi-paradigm",
       "content": "OOP, structured, functional, & aspect-oriented. Adaptable to how you structure your programs.",
-      "icon": ""
+      "icon": "multi-paradigm"
     },
     {
       "title": "Ubiquitous",
       "content": "Accepted for almost any use. Easily interface with other languages & execute almost everywhere.",
-      "icon": ""
+      "icon": "general-purpose"
     }
   ],
   "tags": [

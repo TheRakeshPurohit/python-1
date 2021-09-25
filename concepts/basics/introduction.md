@@ -1,11 +1,11 @@
 # Introduction
 
 [Python][python docs] is a [dynamic and strongly][dynamic typing in python] typed [object-oriented][object oriented programming] programming language.
-It employs both [duck typing][duck typing] and [gradual typing][gradual typing], via [type hints][type hints].
+It employs both [duck typing][duck typing] and [gradual typing][gradual typing] via [type hints][type hints].
 It supports multiple programming paradigms including both imperative (_object-oriented, procedural_) and declarative (_functional, concurrent_) flavors.
 
 Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation][significant indentation] for function, method, and class definitions.
-The [zen of Python (PEP 20)][the zen of python] and [What is Pythonic?][what is pythonic]lay out additional philosophies.
+The [zen of Python (PEP 20)][the zen of python] and [What is Pythonic?][what is pythonic] lay out additional philosophies.
 
 Objects are [assigned][assignment statements] to [names][naming and binding] via the _assignment operator_, `=`.
 [Variables][variables] are written in [`snake_case`][snake case], and _constants_ usually in `SCREAMING_SNAKE_CASE`.
@@ -33,7 +33,7 @@ MY_FIRST_CONSTANT = 16
 ```
 
 The keyword `def` begins a [function definition][function definition].
-It must be followed by the function name and a parenthesized list of zero or more formal [parameters][parameters].  
+It must be followed by the function name and a parenthesized list of zero or more formal [parameters][parameters].
  Parameters can be of several different varieties, and can even [vary][more on functions] in length.
 The `def` line is terminated with a colon.
 
@@ -57,7 +57,7 @@ Functions that do not have an explicit `return` expression will return [`None`][
 def add_two_numbers(number_one, number_two):
   result = number_one + number_two
 
->>> print(add_two_numbers(5, 7))
+>>> print(add_two_number s(5, 7))
 None
 ```
 
@@ -79,9 +79,14 @@ The number of arguments passed in the parentheses must match the number of param
 
 ```python
 def number_to_the_power_of(number_one, number_two):
-    '''Returns float or int.
-       Takes number_one and raises it to the power of number_two, returning the result.
-    '''
+    """Raise a number to an arbitrary power.
+    
+    :param number_one: int the base number.
+    :param number_two: int the power to raise the base number to.
+    :return: int - number raised to power of second number
+    
+    Takes number_one and raises it to the power of number_two, returning the result.
+    """
 
     return number_one ** number_two
 
@@ -103,10 +108,15 @@ Adding a [default value][default arguments] for a parameter can defend against s
 
 ```python
 def number_to_the_power_of_default(number_one, number_two=2):
-    '''Returns float or int.
-       Takes number_one and raises it to the power of number_two, returning the result.
-    '''
-
+    """Raise a number to an arbitrary power.
+    
+    :param number_one: int the base number.
+    :param number_two: int the power to raise the base number to.
+    :return: int - number raised to power of second number
+    
+    Takes number_one and raises it to the power of number_two, returning the result.
+    """
+    
     return number_one ** number_two
 
 >>> number_to_the_power_of_default(4)
@@ -151,15 +161,20 @@ x = "foo"  # This is an in-line comment.
 The first statement of a function body can optionally be a [_docstring_][docstring], which concisely summarizes the function or object's purpose.
 Docstrings are read by automated documentation tools and are returned by calling `.__doc__()` on the function, method, or class name.
 They can also function as [lightweight unit tests][doctests], which will be covered in a later exercise.
-They are recommended for programs of any size where documentation is needed:
+They are recommended for programs of any size where documentation is needed, and their conventions are laid out in [PEP257][PEP257]:
+
 
 ```python
 # An example on a user-defined function.
 def number_to_the_power_of(number_one, number_two):
-    '''Returns float or int.
-
-       Takes number_one and raises it to the power of number_two, returning the result.
-    '''
+    """Raise a number to an arbitrary power.
+    
+    :param number_one: int the base number.
+    :param number_two: int the power to raise the base number to.
+    :return: int - number raised to power of second number
+    
+    Takes number_one and raises it to the power of number_two, returning the result.
+    """
 
     return number_one ** number_two
 
@@ -182,6 +197,7 @@ encoding defaults to sys.getdefaultencoding().
 errors defaults to 'strict'.
 ```
 
+[PEP257]: https://www.python.org/dev/peps/pep-0257/
 [assignment statements]: https://docs.python.org/3/reference/simple_stmts.html#assignment-statements
 [calls]: https://docs.python.org/3/reference/expressions.html#calls
 [comments]: https://realpython.com/python-comments-guide/#python-commenting-basics

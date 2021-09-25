@@ -46,15 +46,25 @@ def copy_solution_files(exercise: ExerciseInfo, workdir: Path, exercise_config: 
     if exercise_config is not None:
         solution_files = exercise_config.files.solution
         exemplar_files = exercise_config.files.exemplar
+        helper_files = exercise_config.files.editor
     else:
         solution_files = []
         exemplar_files = []
+        helper_files = []
+
+    if helper_files:
+        helper_files = [exercise.path / h for h in helper_files]
+        for helper_file in helper_files:
+            dst = workdir / helper_file.relative_to(exercise.path)
+            copy_file(helper_file, dst)
+
     if not solution_files:
         solution_files.append(exercise.solution_stub.name)
     solution_files = [exercise.path / s for s in solution_files]
     if not exemplar_files:
         exemplar_files.append(exercise.exemplar_file.relative_to(exercise.path))
     exemplar_files = [exercise.path / e for e in exemplar_files]
+
     for solution_file, exemplar_file in zip_longest(solution_files, exemplar_files):
         if solution_file is None:
             copy_file(exemplar_file, workdir / exemplar_file.name)
@@ -68,10 +78,20 @@ def copy_solution_files(exercise: ExerciseInfo, workdir: Path, exercise_config: 
 def copy_test_files(exercise: ExerciseInfo, workdir: Path, exercise_config = None):
     if exercise_config is not None:
         test_files = exercise_config.files.test
+        helper_files = exercise_config.files.editor
     else:
         test_files = []
+        helper_files = []
+
+    if helper_files:
+        for helper_file_name in helper_files:
+            helper_file = exercise.path / helper_file_name
+            helper_file_out = workdir / helper_file_name
+            copy_file(helper_file, helper_file_out, strip_skips=(exercise.slug not in ALLOW_SKIP))
+
     if not test_files:
         test_files.append(exercise.test_file.name)
+
     for test_file_name in test_files:
         test_file = exercise.path / test_file_name
         test_file_out = workdir / test_file_name

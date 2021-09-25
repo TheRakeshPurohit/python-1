@@ -103,7 +103,9 @@ class ExerciseFiles:
 
     solution: List[str]
     test: List[str]
+    editor: List[str] = None
     exemplar: List[str] = None
+
 
     # practice exercises are different
     example: List[str] = None
@@ -132,9 +134,11 @@ class ExerciseConfig:
     forked_from: str = None
     contributors: List[str] = None
     language_versions: List[str] = None
+    test_runner: bool = True
     source: str = None
     source_url: str = None
     blurb: str = None
+    icon: str = None
 
     def __post_init__(self):
         if isinstance(self.files, dict):
@@ -189,6 +193,10 @@ class ExerciseInfo:
             ),
             None,
         )
+
+    @property
+    def helper_file(self):
+        return next(self.path.glob("*_data.py"), None)
 
     @property
     def test_file(self):
@@ -274,6 +282,8 @@ class FilePatterns:
     test: List[str]
     example: List[str]
     exemplar: List[str]
+    editor: List[str] = None
+
 
 
 @dataclass

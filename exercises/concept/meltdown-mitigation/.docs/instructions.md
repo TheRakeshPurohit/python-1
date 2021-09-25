@@ -5,7 +5,7 @@ In this exercise, we'll develop a simple control system for a nuclear reactor.
 For a reactor to produce the power it must be in a state of _criticality_.
 If the reactor is in a state less than criticality, it can become damaged.
 If the reactor state goes beyond criticality, it can overload and result in a meltdown.
-We want to mitigte the chances of meltdown and correctly manage reactor state.
+We want to mitigate the chances of meltdown and correctly manage reactor state.
 
 The following three tasks are all related to writing code for maintaining ideal reactor state.
 
@@ -14,9 +14,9 @@ The following three tasks are all related to writing code for maintaining ideal 
 The first thing a control system has to do is check if the reactor is balanced in criticality.
 A reactor is said to be critical if it satisfies the following conditions:
 
-- The temperature less than 800.
-- The number of neutrons emitted per second greater than 500.
-- The product of temperature and neutrons emitted per second less than 500000.
+- The temperature is less than 800.
+- The number of neutrons emitted per second is greater than 500.
+- The product of temperature and neutrons emitted per second is less than 500000.
 
 Implement the function `is_criticality_balanced()` that takes `temperature` and `neutrons_emitted` as parameters, and returns `True` if the criticality conditions are met, `False` if not.
 
@@ -30,20 +30,22 @@ True
 Once the reactor has started producing power its efficiency needs to be determined.
 Efficiency can be grouped into 4 bands:
 
-1. green -> 80-100% efficiency
-2. orange -> 60-79% efficiency
-3. red -> 30-59% efficiency
-4. black -> <30% efficient
+1. `green` -> efficiency of 80% or more,
+2. `orange` -> efficiency of less than 80% but at least 60%,
+3. `red` -> efficiency below 60%, but still 30% or more,
+4. `black` ->  less than 30% efficient.
 
-These percentage ranges are calculated as `(generated_power/ theoretical_max_power)*100`
-where generated `power = voltage * current`
+The percentage value can be calculated as `(generated_power/theoretical_max_power)*100`
+where `generated_power` = `voltage` * `current`.
+Note that the percentage value is usually not an integer number, so make sure to consider the
+proper use of the `<` and `<=` comparisons.
 
-Implement the function `reactor_efficency()`, with three parameters: `voltage`,
+Implement the function `reactor_efficiency(<voltage>, <current>, <theoretical_max_power>)`, with three parameters: `voltage`,
 `current`, and `theoretical_max_power`.
 This function should return the efficiency band of the reactor : 'green', 'orange', 'red', or 'black'.
 
 ```python
->>> reactor_efficency(200,50,1500)
+>>> reactor_efficiency(200,50,15000)
 'orange'
 ```
 
@@ -56,14 +58,14 @@ Criticality can then be increased, decreased, or stopped by inserting (or removi
 Implement the function called `fail_safe()`, which takes 3 parameters: `temperature`,
 `neutrons_produced_per_second`, and `threshold`, and outputs a status code for the reactor.
 
-- If `temperature * neutrons_per_second` < 40% of threshold, output a status code of 'LOW'
+- If `temperature * neutrons_produced_per_second` < 40% of `threshold`, output a status code of 'LOW'
   indicating that control rods must be removed to produce power.
 
-- If `temperature * neutrons_per_second` are within plus or minus 10% of the `threshold`
+- If `temperature * neutrons_produced_per_second` are within plus or minus 10% of the `threshold`
   the reactor is in _criticality_ and the status code of 'NORMAL' should be output, indicating that the
-  reactor is in optimum condition and control rods are in an idea position.
+  reactor is in optimum condition and control rods are in an ideal position.
 
-- If `temperature * neutron_per_second` is not in the above-stated ranges, the reactor is
+- If `temperature * neutrons_produced_per_second` is not in the above-stated ranges, the reactor is
   going into meltdown and a status code of 'DANGER' must be passed to immediately shut down the reactor.
 
 ```python

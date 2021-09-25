@@ -8,7 +8,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v3
+      - uses: actions/stale@v4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-stale: 21
@@ -19,7 +19,12 @@ jobs:
           # Exempt all issues with milestones from being marked as stale.
           exempt-all-issue-milestones: true
 
-          exempt-issue-labels: 'discussion 💬,pinned 📌,enhancement 🦄 ⭐,beginner friendly,maintainer action required❕,on hold ✋🏽'
+          # Only check issues and PRs with these labels
+          any-of-labels: "x:status/claimed,claimed 🐾,dependencies,do not merge 🚧,duplicate,experimental 🔬,
+            first-timers only 🐣,github_actions,good first issue,good first patch,hacktoberfest 🍁,
+            hacktoberfest-accepted ☑,in-progress 🌿,invalid,python,security 🚨, wip/content-checking  ☑,
+            wip/proof-reading 👀,wip/story-writing  ✍,wip/style-guideline-checking 📐,spam 🚫,status/draft,
+            status/wontfix  🙅🏽"
           stale-issue-label: abandoned 🏚
           stale-issue-message: >
             This issue has been automatically marked as `abandoned 🏚`
@@ -29,8 +34,7 @@ jobs:
           close-issue-message: >
             Closing stale issue. If this issue is still relevant,
             please reopen it.
-          exempt-pr-labels: 'pinned 📌,enhancement 🦄 ⭐,please review 👀,maintainer action required ❕'
-          stale-pr-label: abandoned 🏚
+          stale-pr-label: 'abandoned 🏚'
           stale-pr-message: >
             This pull request has been automatically marked as `abandoned 🏚`
             because it has not had recent activity. It will be closed if no
